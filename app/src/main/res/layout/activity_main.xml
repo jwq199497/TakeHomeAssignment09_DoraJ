@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/vote_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:hint="Vote your favorite mobile game"
+        />
+
+    <EditText
+        android:id="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:hint="Production Company"/>
+
+    <EditText
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:hint="Game Genre"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See your Vote detail"
+        android:onClick="setSingleVote"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add another"
+        android:onClick="addMultiVote"/>
+
+    <TextView
+        android:id="@+id/show_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote Your First Game.\nTap SEE DETAIL to see your vote"
+        android:layout_marginVertical="20dp"/>
+
+</LinearLayout>
